@@ -8,17 +8,13 @@ The system:
 
 The pipeline consists of:
 
-Feature Detection
-Shi-Tomasi corner detection: Detects strong feature points in each frame
+Feature Detection: Shi-Tomasi corner detection: Detects strong feature points in each frame
 
-Feature Tracking
-Lucas–Kanade Optical Flow: Tracks features between consecutive frames
+Feature Tracking: Lucas–Kanade Optical Flow: Tracks features between consecutive frames
 
-Pose Estimation
-Essential Matrix computation: Recovers relative rotation and translation
+Pose Estimation: Essential Matrix computation and recovers relative rotation and translation
 
-IMU Integration
-Uses rotation vector and linear acceleration: Computes orientation and velocity
+IMU Integration: Uses rotation vector and linear acceleration to compute orientation and velocity
 
 Pose Accumulation: Integrates incremental motion and builds a global trajectory
 
